@@ -1,10 +1,14 @@
 body{
     background-color:#075e69cb ;
+    font-family:'Roboto' ;
+    font-size: 1.8em;
 }
 
 button{
     color: black;
     background-color: yellow;
+    font-size: 0.9em;
+    border: solid #075e69cb;
     /* border-radius: 10em; */
 }
 
@@ -39,6 +43,7 @@ nav{
     color: black;
     text-decoration: none;
     text-align: center;
+    height: 50px;
 }
 #hamitems a:hover{
     background: #327581d8;
@@ -57,7 +62,7 @@ nav{
 .image img{
     padding: 15px;
     width: 10%;
-    height: 60px;
+    height: 80px;
     border-radius: 10px;
     padding-left: 40px;
 }
@@ -68,13 +73,14 @@ nav{
 }
 .pic{
     width: 60%;
-    height: 40%;
+    height:70%;
     padding-top: 40px;
     padding-right: 15px ;
     padding-left: 50px;
 }
 
 .pic img{
+    padding-top: 25px;
     width: 100%;
     height: 100%;
 }
@@ -134,12 +140,14 @@ nav{
     padding-bottom: 10%;
     padding-left: 50px;
     padding-right: 50px;
+    padding-top: 150px;
+    height: 400px;
 }
 
 /* login */
 .page{
       width: 100%;
-    height: 650px;
+    height: 850px;
     background-color: #075e69cb;
     padding-top: 20px;
     padding-left: 15px;
@@ -150,10 +158,11 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
+    
 
 }
 .login{
-   height: 200px;
+   height: 300px;
    width: 350px;
     /* text-align: center; */
     border: solid black;
@@ -175,6 +184,11 @@ nav{
     /* align-content: center; */
 }
 
+#fname , #Sname , #email ,#address,#password,#cpassword{
+    height: 23px;
+    width: 180px;
+}
+
 /*  listings page*/
 .CarsGrid h4{
  font-size: 1.5em;
@@ -187,19 +201,19 @@ nav{
 .Car1{
     display: flex;
     flex-direction: row;
-    width: 30%;
+    width: 15%;
     height: 110px; 
     padding-bottom: 10px;
 }
 
 .Car1 img{
     width: 100%;
-    height: 110px; 
+    height: 100%; 
     padding-right: 0;
 }
 
 .Car1 .name{
-    width: 110%;
+    width: 100px;
     height: 90px;
     font-size: 0.8em;
     padding-left: 10px;
@@ -216,7 +230,7 @@ nav{
 
 .Car2 img{
     width: 100%;
-    height: 110px; 
+    height: 100%; 
     padding-right: 0;
 }
 
@@ -240,7 +254,7 @@ nav{
 
 .Car3 img{
     width: 100%;
-    height: 110px; 
+    height: 100%; 
     padding-right: 0;
 }
 
@@ -263,7 +277,7 @@ nav{
 
 .Car4 img{
     width: 100%;
-    height: 110px; 
+    height: 100%; 
     padding-right: 0;
 }
 
@@ -287,7 +301,7 @@ nav{
 
 .Car5 img{
     width: 100%;
-    height: 110px; 
+    height: 100%; 
     padding-right: 0;
 }
 
@@ -304,14 +318,14 @@ nav{
 .Car6{
     display: flex;
     flex-direction: row;
-    width: 31%;
-    height: 110px; 
+    width: 18%;
+    height: 120px; 
     padding-bottom: 10px;
 }
 
 .Car6 img{
     width: 100%;
-    height: 110px; 
+    height: 100%; 
     padding-right: 0;
 }
 
@@ -335,7 +349,7 @@ nav{
 
 .Car7 img{
     width: 100%;
-    height: 110px; 
+    height: 100%; 
     padding-right: 0;
 }
 
@@ -359,7 +373,7 @@ nav{
 
 .Car8 img{
     width: 100%;
-    height: 110px; 
+    height: 100%; 
     padding-right: 0;
 }
 
@@ -382,7 +396,7 @@ nav{
 
 .Car9 img{
     width: 100%;
-    height: 110px; 
+    height: 100%; 
     padding-right: 0;
 }
 
@@ -398,20 +412,20 @@ nav{
 .Car10{
     display: flex;
     flex-direction: row;
-    width: 18%;
+    width: 10%;
     height: 110px; 
     padding-bottom: 10px;
 }
 
 .Car10 img{
     width: 100%;
-    height: 110px; 
+    height: 100%; 
     padding-right: 0;
 }
 
 .Car10 .name{
-    width: 10px;
-    height: 90px;
+    width: 100px;
+    height: 10px;
     font-size: 0.8em;
     padding-left: 10px;
    
@@ -569,33 +583,89 @@ nav{
 }
 
 /* Dashboard page */
-
+.title{
+    font-size: 1.5em;
+    padding-left: 20px;
+}
 .main-overview {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); /* Where the magic happens */
-    grid-auto-rows: 94px;
+    grid-auto-rows: 194px;
     grid-gap: 20px;
     margin: 20px;
+    padding-bottom: 0;
   }
   
   .overviewcard {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     padding: 20px;
     background-color: rgb(57, 136, 160);
     border: yellow solid;
+    padding-bottom: 0;
+    border-radius: 10px;
+  }
+
+  .overviewcard_info h1{
+      font-size: 2em;
+      padding: 0;
+      text-align: end;
+  }
+
+  .overviewcard_info p{
+      font-size: 1.4em;
+      padding-bottom: 25px;
   }
 
   .overviewcard_icon .material-icons{
-      width: 150px;
-      height: 150px;
-      font-size: 400px;
+      /* width: 400px  ; */
+      /* height: 00px ;? */
+      /* font-size: 400px; */
+      /* background-size: 100% 100%; */
+      font-size:7rem;
+      padding-right: 50px;
+      padding-left: 30px;
   }
 
 
+  .main-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(1000px, 1fr)); /* Where the magic happens */
+    grid-auto-rows: 134px;
+    grid-gap: 20px;
+    margin: 20px;
+    height: 600px;
+  }
+  
+  .bookingCard {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    padding: 20px;
+    background-color: rgb(57, 136, 160);
+    border: yellow solid;
+    border-radius: 10px;
+    /* height: 200px; */
+  }
 
+  .bookingCard_img img{
+      width: 170px;
+      height: 90px;
+      /* font-size: 400px; */
+  }
 
+  .bookingCard_info p{
+      font-size: 1.5em;
+      padding-left: 10px;
+  }
+
+   .main-cards h6{
+       font-size: 1.8em;
+
+   }
+
+https://fonts.google.com/specimen/Amatic+SC
 
 
 @media screen and (max-width: 768px){
