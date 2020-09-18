@@ -176,11 +176,11 @@ nav{
 }
 /* Sign up */
 .register{
-    background-color: ;
-    /* border: solid black; */
-    padding: 5px;
-    width: 35%;
-    height: 450px;
+    background-color: #075e69cb;
+    border: solid yellow;
+    padding: 10px;
+    /* width: 35%; */
+    height: 850px;
     /* align-content: center; */
 }
 
@@ -190,6 +190,10 @@ nav{
 }
 
 /*  listings page*/
+.CarsGrid{
+    border: solid yellow;
+    padding: 10px;
+}
 .CarsGrid h4{
  font-size: 1.5em;
 }
@@ -201,7 +205,7 @@ nav{
 .Car1{
     display: flex;
     flex-direction: row;
-    width: 15%;
+    width: 30%;
     height: 110px; 
     padding-bottom: 10px;
 }
@@ -213,10 +217,11 @@ nav{
 }
 
 .Car1 .name{
-    width: 100px;
+    width: 150%;
     height: 90px;
     font-size: 0.8em;
     padding-left: 10px;
+   
    
 }
 /*  car 2 */
@@ -318,7 +323,7 @@ nav{
 .Car6{
     display: flex;
     flex-direction: row;
-    width: 18%;
+    width: 28%;
     height: 120px; 
     padding-bottom: 10px;
 }
@@ -330,7 +335,7 @@ nav{
 }
 
 .Car6 .name{
-    width: 800px;
+    width: 250%;
     height: 90px;
     font-size: 0.8em;
     padding-left: 10px;
@@ -412,7 +417,7 @@ nav{
 .Car10{
     display: flex;
     flex-direction: row;
-    width: 10%;
+    width: 100%;
     height: 110px; 
     padding-bottom: 10px;
 }
@@ -424,7 +429,7 @@ nav{
 }
 
 .Car10 .name{
-    width: 100px;
+    width: 1500%;
     height: 10px;
     font-size: 0.8em;
     padding-left: 10px;
@@ -492,7 +497,7 @@ nav{
 
 #toyota img{
     padding-top: 0;
-    width: 23%;
+    width: 15%;
 }
 
 #hyundai{
@@ -515,8 +520,8 @@ nav{
 }
 
 #rush img{
-    width: 25%;
-
+    width: 15%;
+  
 }
 
 #honda{
@@ -524,7 +529,7 @@ nav{
 }
 
 #honda img{
-    width: 25%;
+    width: 15%;
 }
 #rover{
     padding-bottom: 10px;
@@ -535,7 +540,7 @@ nav{
 }
 
 #T86 img{
-    width: 25%;
+    width: 15%;
 }
 /* input dates */
 .dates label{
@@ -584,7 +589,7 @@ nav{
 
 /* Dashboard page */
 .title{
-    font-size: 1.5em;
+    font-size: 1em;
     padding-left: 20px;
 }
 .main-overview {
@@ -599,7 +604,7 @@ nav{
   .overviewcard {
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     padding: 20px;
     background-color: rgb(57, 136, 160);
     border: yellow solid;
@@ -608,13 +613,13 @@ nav{
   }
 
   .overviewcard_info h1{
-      font-size: 2em;
+      font-size: 1.4em;
       padding: 0;
       text-align: end;
   }
 
   .overviewcard_info p{
-      font-size: 1.4em;
+      font-size: 0.9em;
       padding-bottom: 25px;
   }
 
@@ -624,7 +629,7 @@ nav{
       /* font-size: 400px; */
       /* background-size: 100% 100%; */
       font-size:7rem;
-      padding-right: 50px;
+      /* padding-right: 50px; */
       padding-left: 30px;
   }
 
@@ -656,23 +661,31 @@ nav{
   }
 
   .bookingCard_info p{
-      font-size: 1.5em;
+      font-size: 0.9em;
       padding-left: 10px;
   }
 
    .main-cards h6{
-       font-size: 1.8em;
+       font-size: 1.2em;
 
    }
 
-https://fonts.google.com/specimen/Amatic+SC
 
 
 @media screen and (max-width: 768px){
 
     #hamitems{
         display:none;
-        height: auto;
+        height: 1000px;
+        width: 100%;
+    }
+
+    #hamnav .image img{
+        display: none;
+    }
+
+    #hamnav .image label{
+         text-align: end;
     }
 
     #hamnav label:hover{
@@ -686,8 +699,8 @@ https://fonts.google.com/specimen/Amatic+SC
         font-size: 1.2em;
         padding: 10px;
         
-    }
-
+    }  
+    
     #hamitems a{
         box-sizing: border-box;
         display: block;
@@ -697,4 +710,125 @@ https://fonts.google.com/specimen/Amatic+SC
 
     #hamtems{ display: none;}
     #hamnav input:checked ~ #hamitems {display: block}
+}
+@media screen and (max-width: 768px){
+    /* mainpage */
+
+    .mainPage{
+        height: 100%;
+    }
+
+    .mainPage .info .pic img{
+        display: none;
+    }
+
+    .para{
+        padding-right: 20px;
+        padding-bottom: 100px;
+    }
+
+
+
+  
+
+#about{
+    padding-top: 200px;
+    padding-left: 85px;
+    padding-right: 20px;
+}
+
+#ContactUs{
+    padding-top: 800px;
+    padding-left: 130px;
+    padding-right: 20px;
+}
+
+
+/* listings page */
+.Car1, .Car2 , .Car3,  .Car4 ,.Car5 ,.Car6 ,.Car7 ,.Car8, .Car9 ,.Car10{
+    font-size: 0.8em;
+}
+
+ .Car1{
+    width: 100%; 
+
+}
+.Car1 img{
+    width: 100%;
+}
+
+.Car1 .name{
+    width:250%;
+}
+
+
+.Car6{
+    width: 48%;
+}
+
+.Car10{
+    width: 21%;
+} */
+
+/* bookingCar */
+
+#toyota img{
+    width:1000%;
+    height: 80%;
+}
+
+#rush{
+    width:50%;
+    height:50%;
+}
+
+/* payments */
+
+.payment{
+    height:100%;
+}
+
+/* dashboard */
+
+.main-overview{
+    width: 70%;
+}
+
+.overviewcard_info{
+    font-size: 0.8em;
+}
+.title h1{
+    font-size: 1.3em;
+}
+.overviewcard_icon .material-icons{
+   display: none;
+}
+.main-cards{
+    width: 100%;
+}
+
+
+.bookingCard{
+    width: 30%;
+    font-size: 0.7em;
+}
+
+.bookingCard_img img{
+    width: 100px;
+    height: 45px;
+}
+
+/* login */
+
+.page h2{
+    font-size: 0.9em;
+}
+
+.loginPage{
+    font-size:0.7em;
+}
+
+.login{
+    height: 215px;
+}
 }
